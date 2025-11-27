@@ -18,7 +18,7 @@ def datos_users():
 
 
 def test_esquema_users(datos_users):
-    """Test de esquema para el DataFrame de datos_banco.
+    """Test de esquema para el DataFrame de datos_users.
     Característica objetivo: Exactitud sintáctica (formato general del dataset).
 
     Args:
