@@ -1,0 +1,15 @@
+stages:
+  test_data_schema_users:
+    cmd: pytest --html=docs/test_results/test_results_users.html --self-contained-html test/test_esquema_users.py
+    deps:
+      - test/test_esquema_users.py
+      - data/users.csv
+    outs:
+      - docs/test_results/test_results_users.html
+  test_data_values_users:
+    cmd: pytest --html=docs/test_results/test_results_exp_users.html --self-contained-html test/test_exp_users.py
+    deps:
+      - test/test_exp_users.py
+      - data/users.csv
+    outs:
+      - docs/test_results/test_results_exp_users.html

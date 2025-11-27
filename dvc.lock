@@ -1,0 +1,53 @@
+schema: '2.0'
+stages:
+  test_data_schema:
+    cmd: pytest --html=docs/test_results/test_results.html --self-contained-html
+      test/test_esquema_users.py
+    deps:
+    - path: data/users.csv
+      hash: md5
+      md5: 2f397d4f8712cb33cd8ded67a307676b
+      size: 104578
+    - path: test/test_esquema_users.py
+      hash: md5
+      md5: 7f5dd499d32c3e439324a444d9aceeae
+      size: 2106
+    outs:
+    - path: docs/test_results/test_results.html
+      hash: md5
+      md5: d6964a582447dcaa6a5fb5558c01268e
+      size: 32615
+  test_data_schema_users:
+    cmd: pytest --html=docs/test_results/test_results_users.html 
+      --self-contained-html test/test_esquema_users.py
+    deps:
+    - path: data/users.csv
+      hash: md5
+      md5: 2f397d4f8712cb33cd8ded67a307676b
+      size: 104578
+    - path: test/test_esquema_users.py
+      hash: md5
+      md5: 7f5dd499d32c3e439324a444d9aceeae
+      size: 2106
+    outs:
+    - path: docs/test_results/test_results_users.html
+      hash: md5
+      md5: 807e0783ab2e963acd992e973b260825
+      size: 32633
+  test_data_values_users:
+    cmd: pytest --html=docs/test_results/test_results_exp_users.html 
+      --self-contained-html test/test_exp_users.py
+    deps:
+    - path: data/users.csv
+      hash: md5
+      md5: 2f397d4f8712cb33cd8ded67a307676b
+      size: 104578
+    - path: test/test_exp_users.py
+      hash: md5
+      md5: a7357d93acba5dc0ef97d9cd61e2f27a
+      size: 4536
+    outs:
+    - path: docs/test_results/test_results_exp_users.html
+      hash: md5
+      md5: a3e4da10f6d026ce6f9250cfa1265faf
+      size: 39787
