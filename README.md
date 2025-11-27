@@ -61,11 +61,6 @@ cd taller-jcsa25-testing-datos
 gh repo clone tinxo/taller-jcsa25-testing-datos
 cd taller-jcsa25-testing-datos
 
-# Alternativa con GitHub CLI
-# (requiere https://cli.github.com/)
-gh repo clone tinxo/taller-jcsa25-testing-datos
-cd taller-jcsa25-testing-datos
-
 # uv sincronizará automáticamente las dependencias y creará el entorno virtual
 uv sync
 
@@ -88,6 +83,11 @@ Si prefieres usar las herramientas estándar de Python:
 ```bash
 # Clonar el repositorio
 git clone https://github.com/tinxo/taller-jcsa25-testing-datos.git
+cd taller-jcsa25-testing-datos
+
+# Alternativa con GitHub CLI
+# (requiere https://cli.github.com/)
+gh repo clone tinxo/taller-jcsa25-testing-datos
 cd taller-jcsa25-testing-datos
 
 # Crear entorno virtual
