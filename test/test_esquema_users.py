@@ -61,3 +61,4 @@ def test_basico_users(datos_users):
     assert not df.empty, "El DataFrame está vacío." 
     # Verificar cantidad de columnas
     assert df.shape[1] == 11, f"El DataFrame debería tener 11 columnas, pero tiene {df.shape[1]}."
+    assert df.shape[0] == 1000, "El DataFrame debería tener 1000 filas."

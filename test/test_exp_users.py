@@ -38,10 +38,10 @@ def build_validator(df: pd.DataFrame) -> ge.validator.validator.Validator:
         "gender", ["Male", "Female", "Other", "Prefer not to say"]
     )
     validator.expect_column_values_to_be_in_set(
-        "loyalty_tier", ["Bronze", "Silver", "Gold", "Platinum", None]
+        "loyalty_tier", ["Bronze", "Silver", "Gold", "Platinum"]
     )
     # Expectativas de rango >> Atributo de calidad a revisar: Completitud (presencia de datos)
-    validator.expect_column_values_to_be_between("age", min_value=15, max_value=100)
+    validator.expect_column_values_to_be_between("age", min_value=18, max_value=100)
 
     return validator
 

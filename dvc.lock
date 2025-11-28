@@ -27,12 +27,12 @@ stages:
       size: 104578
     - path: test/test_esquema_users.py
       hash: md5
-      md5: 7f5dd499d32c3e439324a444d9aceeae
-      size: 2106
+      md5: e29c5b045da01ba972ab06fa221228de
+      size: 2180
     outs:
     - path: docs/test_results/test_results_users.html
       hash: md5
-      md5: 807e0783ab2e963acd992e973b260825
+      md5: 0fb7c2edbb64c880a9736d7ed1572130
       size: 32633
   test_data_values_users:
     cmd: pytest --html=docs/test_results/test_results_exp_users.html 
